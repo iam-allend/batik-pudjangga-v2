@@ -45,6 +45,7 @@ Route::post('/subscribe', [HomeController::class, 'subscribe'])->name('subscribe
 
 Route::prefix('shop')->name('shop.')->group(function () {
     Route::get('/', [ShopController::class, 'index'])->name('index');
+    Route::get('/{slug}', [ShopController::class, 'show'])->name('show');
     Route::get('/men', [ShopController::class, 'men'])->name('men');
     Route::get('/women', [ShopController::class, 'women'])->name('women');
     Route::get('/pants', [ShopController::class, 'pants'])->name('pants');
