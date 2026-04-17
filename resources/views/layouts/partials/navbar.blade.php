@@ -19,7 +19,7 @@
                     <a href="#" class="nav-dropdown-toggle {{ request()->routeIs('shop.*') ? 'active' : '' }}">
                         Belanja
                     </a>
-                    <ul class="nav-dropdown">
+                    <ul class="nav-dropdown" style="margin-top: -20px;">
                         <li><a href="{{ route('shop.index') }}">Semua Produk</a></li>
                         <li class="nav-dropdown-divider"></li>
                         <li><a href="{{ route('shop.men') }}">
